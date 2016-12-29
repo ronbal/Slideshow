@@ -5,4 +5,4 @@ import os
 #check_call(['sudo', 'apt-get', 'update', '-y'])
 #check_call(['sudo', 'apt-get', 'upgrade', '-y']) 
 
-subprocess.call("(cd ~/temp/slideshow/)", shell=True)
+subprocess.call("(cd ~)", shell=True)
