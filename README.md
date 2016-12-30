@@ -1,4 +1,9 @@
-Disconnect any USB-Drives bevor executing the setup command<br />
+Preparation:<br />
+Startx: Menu -> Preferences -> System -> Boot: To CLI<br />
+Performance -> GPU Memory: 128<br />
+Then reboot<br />
+<br />
+<strong>Disconnect any USB-Drives bevor executing the setup command</strong><br />
 <br />
 sudo git clone https://github.com/Hatschi915/Slideshow.git /home/pi/temp<br />
 cd temp<br />
