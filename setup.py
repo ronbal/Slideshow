@@ -22,4 +22,7 @@ subprocess.call("(sudo mv /home/pi/temp/bin/rc.local /etc/rc.local)", shell=True
 subprocess.call("(sudo mv /home/pi/temp/bin/usbmount.conf /etc/usbmount/usbmount.conf)", shell=True)
 proc = subprocess.Popen(['sudo', 'smbpasswd', '-a', 'pi'], stdin=subprocess.PIPE)
 proc.communicate('raspberry\nraspberry\n')
+subprocess.call("(sudo chown -R pi:pi /home/pi/app)", shell=True)
+subprocess.call("(sudo chown -R pi:pi /home/pi/advertising)", shell=True)
+subprocess.call("(sudo chown -R pi:pi /home/pi/slideshow)", shell=True)
 subprocess.call("(sudo reboot)", shell=True)
