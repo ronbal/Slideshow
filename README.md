@@ -15,5 +15,5 @@ Copy commands to CLI without ->"<-<br />
 <br />
 <br />
 Wait for reboot then connect USB-Stick<br />
-To prevent autostart of slidehow hit CTRL+C during start or add reset.txt to USB-Stick and boot.<br />
+To prevent autostart add reset.txt to USB-Stick and boot.<br />
 
