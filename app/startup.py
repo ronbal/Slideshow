@@ -23,7 +23,7 @@ subprocess.call("clear", shell=True)
 try:
     for i in xrange(10,0,-1):        
         print ("*** Starting Slideshow ***")
-        print ("Hit CTRL+C in 10 Seconds to prevent startup")
+        #print ("Hit CTRL+C in 10 Seconds to prevent startup")
         print (i)
         time.sleep(1)
         subprocess.call("clear", shell=True)
