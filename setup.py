@@ -3,7 +3,7 @@ from subprocess import STDOUT, check_call
 import os
 WorkingDir = os.getcwd()
 check_call(['sudo', 'apt-get', 'update', '-y'])
-#check_call(['sudo', 'apt-get', 'upgrade', '-y'])
+check_call(['sudo', 'apt-get', 'upgrade', '-y'])
 check_call(['sudo', 'apt-get', 'install', 'samba', 'samba-common-bin', '-y'])
 check_call(['sudo', 'apt-get', 'install', 'usbmount', '-y'])
 subprocess.call("(sudo cp /home/pi/temp/bin/smb.conf /etc/samba/smb.conf)", shell=True)
