@@ -18,5 +18,6 @@ subprocess.call("(sudo mv /home/pi/temp/Advertising /home/pi/Advertising)", shel
 subprocess.call("(sudo mv /home/pi/temp/slideshow /home/pi/slideshow)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/app /home/pi/app)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/bin/rc.local /etc/rc.local)", shell=True)
+subprocess.call("(sudo mv /home/pi/temp/bin/usbmount.conf /etc/usbmount/usbmount.conf)", shell=True)
 subprocess.call("(sudo /etc/init.d/samba restart)", shell=True)
 subprocess.call("(sudo reboot)", shell=True)
