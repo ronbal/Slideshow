@@ -3,4 +3,5 @@ cd temp<br />
 sudo python setup.py<br />
 <br />
 <br />
-Wait for reboot then connect USB-Stick
+Wait for reboot then connect USB-Stick<br />
+
