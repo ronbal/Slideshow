@@ -22,6 +22,7 @@ To prevent autostart add reset.txt to USB-Stick and boot.<br />
 Preconfigured samba share, to access all needed folders and settings<br />
 New pictures shown first, then randomly<br />
 Display advertisment after x pictures<br />
+Slideshow runs of USB Stick for easy deleting of files and to keep things tidy<br />
 <br />
 <strong>Need to know:</strong><br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
