@@ -3,7 +3,7 @@ Start with clean, fresh and updated Raspbian SD Image<br />
 https://www.raspberrypi.org/downloads/raspbian/<br />
 <br />
 <br />
-In Desktop Enviorenment:<br />
+In Desktop Environment:<br />
 Startx: Menu -> Preferences -> System -> Boot: To CLI<br />
 Performance -> GPU Memory: 128<br />
 Then reboot<br />
