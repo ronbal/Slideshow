@@ -4,8 +4,8 @@ https://www.raspberrypi.org/downloads/raspbian/<br />
 <br />
 <br />
 In Desktop Environment:<br />
-Startx: Menu -> Preferences -> System -> Boot: To CLI<br />
-Performance -> GPU Memory: 128<br />
+Startx: Menu ->Preferences -> Raspberry Pi Configuration -> System -> Boot: To CLI<br />
+Startx: Menu ->Preferences -> Raspberry Pi Configuration -> Performance -> GPU Memory: 128<br />
 Then reboot<br />
 <br />
 <strong>Disconnect any USB-Drives bevor executing the setup command</strong><br />
