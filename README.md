@@ -24,7 +24,7 @@ New pictures shown first, then randomly<br />
 Display advertisment after x pictures<br />
 Slideshow runs of USB Stick for easy deleting of files and to keep things tidy<br />
 <br />
-<strong>Need to know:</strong><br />
+<strong>Useful knowledge:</strong><br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
 <br />
 Samba share structure:<br />
