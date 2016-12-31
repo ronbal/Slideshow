@@ -18,9 +18,6 @@ config = ConfigParser()
 config.read('/home/pi/app/settings.ini')
 USB_only_mode = config.getboolean('startup_setting', 'USB_only_mode')
 
-subprocess.call("clear", shell=True)
-
-
                 
 if not glob.glob("/media/usb/reset.txt"):
     if not USB_only_mode:
