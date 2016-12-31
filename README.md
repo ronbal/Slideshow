@@ -8,7 +8,7 @@ Startx: Menu -> Preferences -> System -> Boot: To CLI<br />
 Performance -> GPU Memory: 128<br />
 Then reboot<br />
 <br />
-<strong>Disconnect any USB-Drives bevor executing the setup command<strong /><br />
+<strong>Disconnect any USB-Drives bevor executing the setup command</strong><br />
 Copy commands to CLI without ->"<-<br />
 "sudo git clone https://github.com/Hatschi915/Slideshow.git /home/pi/temp"<br />
 "cd temp"<br />
@@ -18,12 +18,12 @@ Copy commands to CLI without ->"<-<br />
 Wait for reboot then connect USB-Stick<br />
 To prevent autostart add reset.txt to USB-Stick and boot.<br />
 <br />
-<strong>Featuers:<strong /><br />
+<strong>Featuers:</strong><br />
 Preconfigured samba share, to access all needed folders and settings<br />
 New pictures shown first, then randomly<br />
 Display advertisment after x pictures<br />
 <br />
-<strong>Need to know:<strong /><br />
+<strong>Need to know:</strong><br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
 <br />
 Samba share structure:<br />
