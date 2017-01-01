@@ -86,7 +86,7 @@ def get_files():
         else:
             Pic_DIR_TEMP="/home/pi/void/"
     elif glob.glob("/media/usb0/*.jpg") or glob.glob("/media/usb0/*.JPG"):
-        print ("\x1b[0;36;40m"+"Getting Files from USB-Stick"+"\x1b[0;37;40m")
+        print ("\x1b[0;36;40m"+"Getting Files from Slideshow Content"+"\x1b[0;37;40m")
         PIC_DIR_TEMP=PIC_DIR
     elif glob.glob("/home/pi/advertising/*.jpg") or glob.glob("/home/pi/advertising/*.JPG"):
         print ("\x1b[0;33;40m"+"Getting Files from AD-Dir"+"\x1b[0;37;40m")
