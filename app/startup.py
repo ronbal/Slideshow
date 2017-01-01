@@ -16,7 +16,8 @@ except ImportError:
     
 config = ConfigParser()
 config.read('/home/pi/app/settings.ini')
-USB_only_mode = config.getboolean('startup_setting', 'USB_only_mode')
+USB_only_mode    = config.getboolean('startup_setting', 'USB_only_mode')
+
 
                 
 if not glob.glob("/media/usb/reset.txt"):
