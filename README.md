@@ -39,7 +39,7 @@ The Slideshow works with an attached USB stick<br />
 Any new .jpg/JPG/jpeg/JPEG file putted into the slideshow hotfolder will be displayed first and<br />
 then moved to the USB Stick. If there is no file on the USB Stick the slideshow will display the ads<br />
 If there is content on the USB Stick the slideshow will show it´s content in random order and after x pictures a ad.<br />
-If the is no USB Stick attached new pictures will be displayed but deleted after.<br />
+If there is no USB Stick attached new pictures will be displayed but deleted after.<br />
 The USB Stick can be disconnected and reconnected while the slideshow is running<br />
 <br />
 PLEASE READ LICENSING AND COPYRIGHT NOTICES ESPECIALLY IF USING FOR COMMERCIAL PURPOSES<br />
