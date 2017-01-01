@@ -5,6 +5,15 @@ import time
 import glob
 import os
 
+try:
+    from configparser import ConfigParser
+except ImportError:
+    from ConfigParser import ConfigParser  # ver. < 3.0
+    
+    
+config = ConfigParser()
+config.read('/home/pi/app/settings.ini')
+Ignore_USB_Stick = config.getboolean('startup_setting', 'Ignore_USB_Stick')
     
 
 class MyEventHandler(pyinotify.ProcessEvent):
@@ -15,7 +24,7 @@ class MyEventHandler(pyinotify.ProcessEvent):
             print ("Skipping:" +str(event.pathname))
         else:
             try:
-                if not glob.glob("/media/usb0/.donotdelete.txt"):
+                if not glob.glob("/media/usb0/.donotdelete.txt") or Ignore_USB_Stick == True:
                     shutil.copyfile(event.pathname,"/media/usb0/"+str(tail))
                     print "created: /media/usb/"+str(tail)
                 else:
