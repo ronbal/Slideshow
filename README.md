@@ -11,7 +11,9 @@ Then reboot<br />
 Copy commands to CLI:<br />
 <br />
 `sudo git clone https://github.com/Hatschi915/Slideshow.git /home/pi/temp`<br />
+<br />
 `cd temp`<br />
+<br />
 `sudo python setup.py`<br />
 <br />
 Wait for reboot then connect USB-Stick<br />
