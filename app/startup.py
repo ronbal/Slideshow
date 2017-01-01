@@ -16,12 +16,12 @@ except ImportError:
     
 config = ConfigParser()
 config.read('/home/pi/app/settings.ini')
-USB_only_mode    = config.getboolean('startup_setting', 'USB_only_mode')
+Skip_IP_Check    = config.getboolean('startup_setting', 'Skip_IP_Check')
 
 
                 
 if not glob.glob("/media/usb/reset.txt"):
-    if not USB_only_mode:
+    if not Skip_IP_Check:
         ips = check_output(['hostname', '--all-ip-addresses'])
         if ips.strip():
             print "got ip"
