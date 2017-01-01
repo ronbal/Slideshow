@@ -25,7 +25,8 @@ config.read('/home/pi/app/settings.ini')
 PIC_DIR = config.get('folder_settings', 'PIC_DIR')
 AD_DIR = config.get('folder_settings', 'AD_DIR')
 TMDELAY = config.getfloat('slideshow_settings', 'TMDELAY')
-NEWDELAY = config.getfloat('slideshow_settings', 'NEWDELAY') 
+NEWDELAY = config.getfloat('slideshow_settings', 'NEWDELAY')
+ADDELAY = config.getfloat('slideshow_settings', 'ADDELAY')
 FADE_TM = config.getfloat('slideshow_settings', 'FADE_TM') 
 SHUFFLE = config.getboolean('slideshow_settings', 'SHUFFLE')
 PPS = config.getint('slideshow_settings', 'PPS')
@@ -81,7 +82,7 @@ def get_files():
     global PicCounter, SHUFFLE, PIC_DIR_TEMP
     if (PicCounter==AdCounter and Advertisment == True):
         if glob.glob("/home/pi/advertising/*.jpg") or glob.glob("/home/pi/advertising/*.JPG"):
-            print ("\x1b[0;33;40m"+"Displaying Advertisment"+"\x1b[0;37;40m")
+            print ("\x1b[0;33;40m"+"Displaying Advertisment"+"\x1b[0;37;40m")            
             PIC_DIR_TEMP=AD_DIR
         else:
             Pic_DIR_TEMP="/home/pi/void/"
@@ -147,8 +148,6 @@ sbg = tex_load("/home/pi/app/void.png") # initially load a background slide
 while DISPLAY.loop_running():
   tm = time.time()
   if tm > nexttm + TEMPDELAY: # load next image
-    #subprocess.call(["clear"])
-    #print("-----------------------------")
     PicCounter += 1
     if (PicCounter>AdCounter):
         print ("RESETTING AdCounter")
@@ -164,6 +163,7 @@ while DISPLAY.loop_running():
         if (ForceAdvertisment == True and PicCounter==AdCounter):
             print ("\x1b[0;33;40m"+"SKIPPING DISPLAYING OF NEW FILE"+"\x1b[0;37;40m")
             TEMPDELAY = 0
+            TEMPDELAY += ADDELAY            
             if (pic_num % CHKNUM) == 0: # this will shuffle as well
                 try:
                     iFiles, nFi = get_files()
@@ -178,8 +178,6 @@ while DISPLAY.loop_running():
             print ("Loaded: "+iFiles[pic_num])
         else:
             print ("\x1b[1;32;40m"+"NEW IMAGE DETECTED"+"\x1b[0;37;40m")
-            #time.sleep(0.5)
-            #print ("Sleeping done")
             TEMPDELAY += NEWDELAY
             TEMPIMAGE = True
             try:
@@ -188,11 +186,12 @@ while DISPLAY.loop_running():
             except:
                 print ("\x1b[0;31;40m"+"New image busy"+"\x1b[0;37;40m")
                 pass            
-            #time.sleep(0.5)
         
     else:
         print ("No new image detected.")
         TEMPDELAY = 0
+        if (PicCounter==AdCounter):
+            TEMPDELAY += ADDELAY
         if (pic_num % CHKNUM) == 0: # this will shuffle as well
             try:
                 iFiles, nFi = get_files()
