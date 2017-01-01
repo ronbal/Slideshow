@@ -16,7 +16,7 @@ except ImportError:
     
 config = ConfigParser()
 config.read('/home/pi/app/settings.ini')
-Skip_IP_Check    = config.getboolean('startup_setting', 'Skip_IP_Check')
+Skip_IP_Check = config.getboolean('startup_setting', 'Skip_IP_Check')
 
 
                 
