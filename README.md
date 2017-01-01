@@ -17,7 +17,6 @@ Copy commands to CLI:<br />
 `sudo python setup.py`<br />
 <br />
 Wait for reboot then connect USB-Stick<br />
-To prevent autostart add reset.txt to USB-Stick and boot.<br />
 <br />
 <strong>Featuers:</strong><br />
 Preconfigured samba share, to access all needed folders and settings<br />
@@ -27,6 +26,9 @@ Slideshow runs of USB Stick for easy deleting of files and to keep things tidy<b
 <br />
 <strong>Useful knowledge:</strong><br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
+To quit running slideshow simply type to your Raspberry:<br />
+<br />
+`sudo killall python`<br />
 <br />
 Samba share structure:<br />
 Advertising: Folder for Ads<br />
