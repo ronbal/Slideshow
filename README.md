@@ -32,7 +32,7 @@ Samba share structure:<br />
 Advertising: Folder for Ads<br />
 Application: The scripts and setting.ini file<br />
 Slideshow_Hotfolder: Here you put new files in<br />
-Slideshow_Content: The content of the slideshow<br />
+Slideshow_Content: The content of the slideshow (USB-Stick)<br />
 <br />
 Behaviour:<br />
 The Slideshow works with an attached USB stick<br />
