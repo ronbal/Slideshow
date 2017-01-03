@@ -18,7 +18,7 @@ subprocess.call("(sudo mkdir /usr/local/lib/python2.7/dist-packages/pi3d/shaders
 subprocess.call("(sudo cp /home/pi/temp/app/shaders/*.*  /usr/local/lib/python2.7/dist-packages/pi3d/shaders/shaders)", shell=True)
 subprocess.call("(sudo pip install pyinotify)", shell=True)
 subprocess.call("(sudo cp -r /home/pi/temp/Advertising/*.* /home/pi/advertising)", shell=True)
-subprocess.call("(sudo cp -r /home/pi/temp/slideshow/*.* /home/pi/slideshow)", shell=True)
+subprocess.call("(sudo mkdir /home/pi/slideshow)", shell=True)
 subprocess.call("(sudo cp -r /home/pi/temp/app/*.* /home/pi/app)", shell=True)
 subprocess.call("(sudo cp -r /home/pi/temp/void/*.* /home/pi/void)", shell=True)
 subprocess.call("(sudo cp /home/pi/temp/bin/rc.local /etc/rc.local)", shell=True)
