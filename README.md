@@ -9,7 +9,7 @@ Startx: Menu ->Preferences -> Raspberry Pi Configuration -> Performance -> GPU M
 Then reboot<br />
 <br />
 <strong>Disconnect any USB-Drives bevor executing the setup command</strong><br />
-Copy commands to CLI:<br />
+Type commands to CLI:<br />
 <br />
 `sudo git clone https://github.com/Hatschi915/Slideshow.git /home/pi/temp`<br />
 <br />
