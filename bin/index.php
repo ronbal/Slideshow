@@ -70,7 +70,7 @@ $Ignore_USB_Stick  = $config->get('startup_setting', 'Ignore_USB_Stick');
       <input name="ForceAdvertisment" type="checkbox" value="1" <?php if ($ForceAdvertisment == 1){?> checked="checked" <?php } ?>/>
       Force Advertisments over new pictures
       <br>
-      Numbers of pictures displayed until ad is displayed:
+      Number of pictures until ad is shown:
       <input name="AdCounter" type="number" style="width: 50px" value="<?php echo $AdCounter; ?>"><br/><br/> 
 <hr>
 <h3>Advanced settings</h3>
