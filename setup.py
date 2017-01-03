@@ -19,7 +19,7 @@ subprocess.call("(sudo cp /home/pi/temp/app/shaders/*.*  /usr/local/lib/python2.
 subprocess.call("(sudo pip install pyinotify)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/Advertising /home/pi/advertising)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/slideshow /home/pi/slideshow)", shell=True)
-subprocess.call("(sudo mv /home/pi/temp/app /home/pi/app)", shell=True)
+subprocess.call("(sudo mv -u /home/pi/temp/app /home/pi/app)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/void /home/pi/void)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/bin/rc.local /etc/rc.local)", shell=True)
 subprocess.call("(sudo mv /home/pi/temp/bin/usbmount.conf /etc/usbmount/usbmount.conf)", shell=True)
