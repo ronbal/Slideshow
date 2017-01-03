@@ -30,6 +30,9 @@ Local webserver to change settings of the slideshow. Connect to the Wlan, which 
 and type `http://raspberry` to access the settings page<br />
 <br />
 <strong>Useful knowledge:</strong><br />
+<br />
+To update remove /home/pi/temp from this installation and start over.<br />
+<br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
 To quit running slideshow simply type to your Raspberry:<br />
 <br />
