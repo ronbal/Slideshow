@@ -33,6 +33,7 @@ and type `http://raspberrypi` to access the settings page<br />
 <br />
 To update remove the following folder from this installation and start over.<br />
 <br />
+`sudo rm -rf /home/pi/advertising`<br />
 `sudo rm -rf /home/pi/app`<br />
 `sudo rm -rf /home/pi/slideshow`<br />
 `sudo rm -rf /home/pi/temp`<br />
