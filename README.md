@@ -25,7 +25,7 @@ New pictures shown first, then randomly<br />
 Display advertisment after x pictures<br />
 Slideshow runs of USB Stick for easy deleting of files and to keep things tidy<br />
 Local webserver to change settings of the slideshow. Connect to the Wlan, which the pi is connected to <br /> 
-and type http://raspberry to acess the settings page<br />
+and type `http://raspberry` to acess the settings page<br />
 <br />
 <strong>Useful knowledge:</strong><br />
 To prevent autostart add a reset.txt file to the USB-Stick and boot.<br />
