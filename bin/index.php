@@ -74,12 +74,13 @@ $Ignore_USB_Stick  = $config->get('startup_setting', 'Ignore_USB_Stick');
       <input name="AdCounter" type="number" style="width: 50px" value="<?php echo $AdCounter; ?>"><br/><br/> 
 <hr>
 <h3>Advanced settings</h3>
-
+   Reboot of pi required to apply changes<br>
+<br>
       <input name="Skip_IP_Check" type="checkbox" value="1" <?php if ($Skip_IP_Check == 1){?> checked="checked" <?php } ?>/>
-      Skip IP check on startup:
+      Skip IP check on startup
       <br>
       <input name="Ignore_USB_Stick" type="checkbox" value="1" <?php if ($Ignore_USB_Stick == 1){?> checked="checked" <?php } ?>/>
-      Skip USB-Stick check:<br>
+      Skip USB-Stick check<br>
       <br>
       <hr>
       <input name="BtnSubmit" type="submit" value="Submit">
