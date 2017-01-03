@@ -28,7 +28,6 @@ subprocess.call("(sudo cp /home/pi/temp/bin/rc.local /etc/rc.local)", shell=True
 subprocess.call("(sudo cp /home/pi/temp/bin/usbmount.conf /etc/usbmount/usbmount.conf)", shell=True)
 subprocess.call("(sudo cp -r /home/pi/temp/bin/server/*.* /var/www/html)", shell=True)
 subprocess.call("(sudo rm /var/www/html/index.html)", shell=True)
-subprocess.call("(sudo cp /home/pi/temp/bin/index.php /var/www/html/index.php)", shell=True)
 subprocess.call("(sudo cp /home/pi/temp/bin/.donotdelete.txt /media/usb/.donotdelete.txt)", shell=True)
 proc = subprocess.Popen(['sudo', 'smbpasswd', '-a', 'pi'], stdin=subprocess.PIPE)
 proc.communicate('raspberry\nraspberry\n')
