@@ -3,6 +3,8 @@ Start with clean, fresh and updated Raspbian SD Image<br />
 https://www.raspberrypi.org/downloads/raspbian/<br />
 <br />
 In Desktop Environment:<br />
+<br />
+Connect to Wlan in upper right corner<br /> 
 Startx: Menu ->Preferences -> Raspberry Pi Configuration -> System -> Boot: To CLI<br />
 Startx: Menu ->Preferences -> Raspberry Pi Configuration -> System -> Network at boot: Wait for network checked<br />
 Startx: Menu ->Preferences -> Raspberry Pi Configuration -> Performance -> GPU Memory: 128<br />
