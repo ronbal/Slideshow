@@ -84,7 +84,4 @@ $Ignore_USB_Stick  = $config->get('startup_setting', 'Ignore_USB_Stick');
       <hr>
       <input name="BtnSubmit" type="submit" value="Submit">
       <br/>
-      <br/>
-      <input name="BtnDelete" type="submit" value="Clear Slideshow">
-      <input name="BtnReset" type="submit" value="Reset slideshow player"><br/><br/>
 </form>
