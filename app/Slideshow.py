@@ -125,7 +125,7 @@ DISPLAY = pi3d.Display.create(background=(0.3, 0.3, 0.3, 1.0), frames_per_second
 shader = [
           pi3d.Shader("shaders/blend_star"),
           pi3d.Shader("shaders/blend_holes"),
-          pi3d.Shader("shaders/blend_false"),
+          #pi3d.Shader("shaders/blend_false"),
           pi3d.Shader("shaders/blend_burn"),
           pi3d.Shader("shaders/blend_bump")
          ]
