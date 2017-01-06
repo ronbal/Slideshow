@@ -31,7 +31,7 @@ and type `http://raspberrypi` to access the settings page<br />
 <br />
 <strong>Useful knowledge:</strong><br />
 <br />
-If you need a sync tool to sync files from windows to the slideshow, there is a minimalistic windows application insides the Application samba share folder. With this application you can specify a windows folder as source and the slideshow as destination.<br />
+If you need a sync tool to sync files from windows to the slideshow, there is a minimalistic windows application insides the application samba share folder. With this application you can specify a windows folder as source and the slideshow_hotfolder as destination.<br />
 <br />
 To update remove the following folder from this installation and start over.<br />
 <br />
